@@ -151,10 +151,12 @@ module Walt
   module Operation
     class FancyOperation < Base
 
+    # run before animation starts
     def setup(view, animation)
       ...
     end
 
+    # make changes to animate
     def finalize(view, animation)
       ...
     end
