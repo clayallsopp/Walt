@@ -2,8 +2,6 @@
 
 Trigger and chain iOS animations with just a hash.
 
-`gem install walt`
-
 ## Usage
 
 ![Walt animation](http://i.imgur.com/yd4RJ.gif)
