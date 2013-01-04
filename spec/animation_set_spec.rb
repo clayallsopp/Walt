@@ -29,13 +29,13 @@ describe "Walt::AnimationSet" do
     end
 
     it "works with Assets" do
-      animation = Walt::Animation.new(start: 0, duration: 3)
+      animation = Walt::Animation.new(delay: 0, duration: 3)
       @set.animations = [animation]
       @set.animations.is_a?(NSArray).should == true
     end
 
     it "works with hash" do
-      animation = {start: 0, duration: 3}
+      animation = {delay: 0, duration: 3}
       @set.animations = [animation]
       @set.animations.is_a?(NSArray).should == true
     end

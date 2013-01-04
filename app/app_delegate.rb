@@ -17,7 +17,6 @@ class AppDelegate
         position: [20, 50]
       }],
       animations:[{
-        start: 0,
         duration: 3,
         operations:[{
           fade: :red,

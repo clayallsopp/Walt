@@ -1,6 +1,5 @@
 =begin
   {
-    start: 0,
     duration: 3,
     options: [:curve_ease_in, :autoreverse]
     operations: [{
@@ -19,7 +18,7 @@ module Walt
   class Animation
     extend Walt::Support::AttrDefault
 
-    PROPERTIES = [:start, :duration, :after, :operations, :options]
+    PROPERTIES = [:delay, :duration, :after, :operations, :options]
     attr_accessor *PROPERTIES
 
     def initialize(params = {})
@@ -103,7 +102,7 @@ module Walt
         operation.setup(asset.view)
 
         UIView.animateWithDuration(self.duration,
-          delay:0,
+          delay:self.delay.to_f,
           options:self.animation_options,
           animations:lambda {
             operation.finalize(asset.view, self)

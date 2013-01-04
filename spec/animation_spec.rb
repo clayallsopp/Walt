@@ -5,13 +5,13 @@ describe "Walt::Animation" do
     end
 
     it "works with hash" do
-      after = {start: 0, duration: 3}
+      after = {delay: 0, duration: 3}
       @anim.after = after
       @anim.after.should.not == nil
     end
 
     it "works with Animation" do
-      after = Walt::Animation.new(start: 0, duration: 3)
+      after = Walt::Animation.new(delay: 0, duration: 3)
       @anim.after = after
       @anim.after.should == after
     end
