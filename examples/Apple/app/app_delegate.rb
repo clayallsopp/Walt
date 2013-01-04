@@ -18,7 +18,7 @@ class AppDelegate
       }, {
         id: "think",
         text: "Think Different",
-        position: [100, 120]
+        position: [100, 130]
       }],
       animations: [{
         duration: 0,
@@ -61,6 +61,9 @@ class AppDelegate
           operations: [{
             rotate: "apple",
             to: -90
+          }, {
+            scale: "apple",
+            to: 1.2
           }],
           after: {
             delay: 1,

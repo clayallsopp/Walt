@@ -22,7 +22,11 @@ class AppDelegate
           fade: :red,
           from: 0.0,
           to: 1.0
-        },{
+        }, {
+          scale: :blue,
+          from: 1.0,
+          to: 2.0
+        }, {
           move: :blue,
           to: 100
         }, {
@@ -36,6 +40,9 @@ class AppDelegate
             rotate: :blue,
             to: 40
           },{
+            scale: :blue,
+            to: 1.0
+          }, {
             move: :blue,
             to: 50
           }, {

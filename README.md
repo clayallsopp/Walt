@@ -81,6 +81,8 @@ Walt supports arbitrary `UIView`s as assets, and can also build some types of vi
 { id: "my_id", text: "Hello World" }
 
 # Creates a new `UIImageView`
+# No animations will start until all
+#   remotely-loaded assets have loaded
 { id: "my_id", url: "http://imgur.com/hello.png" }
 
 ```
@@ -125,6 +127,16 @@ Walt comes with a few nifty operations, and adding your own is easy.
     fade: "my_id",
     from: 1.0,
     to: 0.2
+  }
+```
+
+#### `Scale`
+
+```ruby
+  {
+    fade: "my_id",
+    from: 1.0,
+    to: 1.3
   }
 ```
 
