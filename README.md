@@ -12,6 +12,8 @@ Trigger and chain iOS animations with just a hash.
 Walt.animate(
   assets: [{
     id: "logo",
+    position: [100, 0],
+    size: [110, 40],
     url: "http://bit.ly/S98Ta5"
   }],
   animations: [{
@@ -20,11 +22,20 @@ Walt.animate(
       move: "logo",
       to: 150,
       axis: :y
-    }]
+    }],
+    after: {
+      duration: 2,
+      operations: [{
+        rotate: "logo",
+        to: 360
+      }]
+    }
   }],
-  in: @view
+  in: @window
 )
 ```
+
+![Walt animation](http://i.imgur.com/yd4RJ.gif)
 
 ## Installation
 
@@ -42,7 +53,7 @@ require 'walt'
 gem 'walt'
 ```
 
-Finally, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `App`'s `pods`:
+Finally, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
 
 ```ruby
 app.pods do
