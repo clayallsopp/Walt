@@ -134,7 +134,7 @@ Walt comes with a few nifty operations, and adding your own is easy.
 
 ```ruby
   {
-    fade: "my_id",
+    scale: "my_id",
     from: 1.0,
     to: 1.3
   }
