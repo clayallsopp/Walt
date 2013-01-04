@@ -1,10 +1,10 @@
 # Walt
 
-Trigger and chain iOS animations with just a hash.
-
-## Usage
+Make this:
 
 ![Walt animation](http://i.imgur.com/yd4RJ.gif)
+
+Using this:
 
 ```ruby
 @view = UIView.alloc.initWithFrame(....)
@@ -59,7 +59,7 @@ app.pods do
 end
 ```
 
-## In-Depth
+## Usage
 
 Walt is organized around `assets`, `animations`, and `operations`. Each `animation` is a collection of `operations` occuring at the same time and configuration. 
 
