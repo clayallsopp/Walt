@@ -68,22 +68,20 @@ Walt is organized around `assets`, `animations`, and `operations`. Each `animati
 Walt supports arbitrary `UIView`s as assets, and can also build some types of views from hashes. Constructor hashes include:
 
 ```ruby
-# Anything passed as arguments in these constructors also works inside Walt.animate(assets: [...])
-
 # Uses an existing `UIView`
-Walt::Asset.new id: "my_id", view: UIView.alloc.initWithFrame(...)
+{ id: "my_id", view: UIView.alloc.initWithFrame(...) }
 
 # Creates a new `UIView`
 # All Walt::Assets support these options:
 # :position, :size, :view, :content_mode, :clips_to_bounds, :background_color
-Walt::Asset.new id: "my_id", size: [100,100], background_color: "0088cc"
+{ id: "my_id", size: [100,100], background_color: "0088cc" }
 
 # Creates a new `UILabel`; also supports:
 # :text_color, :background_color, :number_of_lines, :font, :text_alignment
-Walt::Asset.new id: "my_id", text: "Hello World"
+{ id: "my_id", text: "Hello World" }
 
 # Creates a new `UIImageView`
-Walt::Asset.new id: "my_id", url: "http://imgur.com/hello.png"
+{ id: "my_id", url: "http://imgur.com/hello.png" }
 
 ```
 
@@ -167,7 +165,7 @@ Animations can be chained using an animation's `:after` property, which takes an
 
 ```ruby
 # Also applies to Walt.animate
-Walt::Animation.new {
+{
   delay: 0.3,
   duration: 2.2,
   options: [:curve_ease_in, :begin_from_current_state],
