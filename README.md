@@ -6,6 +6,8 @@ Trigger and chain iOS animations with just a hash.
 
 ## Usage
 
+![Walt animation](http://i.imgur.com/yd4RJ.gif)
+
 ```ruby
 @view = UIView.alloc.initWithFrame(....)
 
@@ -34,8 +36,6 @@ Walt.animate(
   in: @window
 )
 ```
-
-![Walt animation](http://i.imgur.com/yd4RJ.gif)
 
 ## Installation
 
