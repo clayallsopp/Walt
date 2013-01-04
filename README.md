@@ -31,7 +31,7 @@ Walt.animate(
       }]
     }
   }],
-  in: @window
+  in: @view
 )
 ```
 
