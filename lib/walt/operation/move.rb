@@ -9,7 +9,6 @@
   }
 =end
 
-p "move.rb"
 module Walt
   module Operation
     class MoveOperation < Base

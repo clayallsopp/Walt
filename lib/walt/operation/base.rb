@@ -5,7 +5,6 @@
   }
 =end
 
-p "operation.rb"
 module Walt
   module Operation
     class Base

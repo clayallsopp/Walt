@@ -5,7 +5,6 @@
   }
 =end
 
-p "fade.rb"
 module Walt
   module Operation
     class FadeOperation < Base

@@ -1,11 +1,10 @@
 =begin
   {
     from: 0,
-    to: 1
+    to: 45
   }
 =end
 
-p "rotate.rb"
 module Walt
   module Operation
     class RotateOperation < Base
