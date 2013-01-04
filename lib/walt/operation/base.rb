@@ -22,7 +22,7 @@ module Walt
         end
       end
 
-      def setup(view)
+      def setup(view, animation)
         # do initial before animation
       end
 

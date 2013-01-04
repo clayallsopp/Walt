@@ -52,7 +52,7 @@ module Walt
         end
       end
 
-      def setup(view)
+      def setup(view, animation)
         if self.from
           origin = view.frame.origin
           origin.x = (self.from[0] || origin.x) 

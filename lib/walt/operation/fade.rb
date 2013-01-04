@@ -22,7 +22,7 @@ module Walt
         end
       end
 
-      def setup(view)
+      def setup(view, animation)
         if self.from
           view.alpha = self.from
         end

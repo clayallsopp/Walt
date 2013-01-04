@@ -99,7 +99,7 @@ module Walt
           raise "No asset found for operation #{operation} id #{operation.id}"
         end
 
-        operation.setup(asset.view)
+        operation.setup(asset.view, self)
 
         UIView.animateWithDuration(self.duration,
           delay:self.delay.to_f,

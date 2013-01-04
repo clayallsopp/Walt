@@ -7,7 +7,7 @@ describe "Walt::Operation::MoveOperation" do
     describe "with one param" do
       it "should work" do
         op = Walt::Operation.for(type: :move, id: :herp, from: 0)
-        op.setup(@view)
+        op.setup(@view, nil)
         @view.origin.x.should == 0
       end
     end
@@ -15,7 +15,7 @@ describe "Walt::Operation::MoveOperation" do
     describe "with array" do
       it "should work" do
         op = Walt::Operation.for(type: :move, id: :herp, from: [200, 200])
-        op.setup(@view)
+        op.setup(@view, nil)
         @view.origin.x.should == 200
         @view.origin.y.should == 200
       end
@@ -26,7 +26,7 @@ describe "Walt::Operation::MoveOperation" do
     describe "with one param" do
       it "should work" do
         op = Walt::Operation.for(type: :move, id: :herp, to: 200)
-        op.finalize(@view)
+        op.finalize(@view, nil)
         @view.origin.x.should == 200
       end
     end
@@ -34,7 +34,7 @@ describe "Walt::Operation::MoveOperation" do
     describe "with array" do
       it "should work" do
         op = Walt::Operation.for(type: :move, id: :herp, to: [200, 200])
-        op.finalize(@view)
+        op.finalize(@view, nil)
         @view.origin.x.should == 200
         @view.origin.y.should == 200
       end
