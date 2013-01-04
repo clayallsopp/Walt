@@ -10,7 +10,7 @@ module Walt
   class Asset
     extend Walt::Support::AttrDefault
 
-    PROPERTIES = [:id, :position, :size, :view, :content_mode, :clips_to_bounds]
+    PROPERTIES = [:id, :position, :size, :view, :content_mode, :clips_to_bounds, :background_color]
     attr_accessor *PROPERTIES
 
     def self.for(params = {})
@@ -53,7 +53,7 @@ module Walt
     def view
       @view ||= UIView.alloc.initWithFrame(CGRectZero).tap do |view|
         view.frame = [self.position || CGPointZero, self.size || CGSizeZero]
-        view.backgroundColor = self.color.to_color
+        view.backgroundColor = self.background_color.to_color if self.background_color
         view.contentMode = self.view_content_mode
         view.clipsToBounds = self.clips_to_bounds
         Dispatch::Queue.main.async do
