@@ -114,7 +114,7 @@ Walt comes with a few nifty operations, and adding your own is easy.
 
 ```ruby
   {
-    fade: "my_id",
+    rotate: "my_id",
     from: 20, # in degrees
     to: 50
   }
