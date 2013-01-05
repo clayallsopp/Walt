@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    walt (0.0.1)
+    walt (0.1)
       afmotion (>= 0.4)
       bubble-wrap (>= 1.1.4)
       motion-cocoapods (~> 1.2.1)
