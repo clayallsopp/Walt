@@ -44,6 +44,8 @@ module Walt
           asset
         when NSDictionary
           Walt::Asset.for(asset)
+        when UIView
+          Walt::Asset.for(asset)
         else
           raise "Invalid class for asset #{asset.inspect}"
         end
