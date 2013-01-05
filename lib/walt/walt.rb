@@ -1,3 +1,11 @@
+=begin
+  Use Walt.animate(...) to add animations to a given `UIView`.
+  Walt.animate({
+    assets: [...],
+    animations: [...],
+    in: a_ui_view
+  })
+=end
 module Walt
   module_function
 

@@ -1,3 +1,14 @@
+=begin
+  {
+    text: "This goes on the screen",
+    text_color: "ff0000",
+    background_color: "00ff00",
+    number_of_lines: 2,
+    text_alignment: :center,
+    font: "MarkerFelt" # see support/font.rb
+    attributes: {...} # see support/font.rb
+  }
+=end
 module Walt
   class TextAsset < Asset
     PROPERTIES = [:text, :text_color, :background_color, :number_of_lines, :font, :attributes, :text_alignment]

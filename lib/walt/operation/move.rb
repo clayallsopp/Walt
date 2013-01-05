@@ -1,11 +1,13 @@
 =begin
   {
-    from: {
-      x: 0, y: 0
-    },
-    to: {
-      x: 10, y: 20
-    }
+    from: [0, 0],
+    to: [10, 20]
+  }
+
+  {
+    from: 100,
+    to: 200,
+    axis: :y
   }
 =end
 

@@ -1,7 +1,7 @@
 =begin
   {
-    from: 0,
-    to: 1
+    from: 0.0,
+    to: 0.8
   }
 =end
 

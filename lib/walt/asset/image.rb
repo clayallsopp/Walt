@@ -1,3 +1,9 @@
+=begin
+  {
+    url: "http://mysite.com/pic.jpg"
+  }
+=end
+
 module Walt
   class ImageAsset < Asset
     PROPERTIES = [:url]

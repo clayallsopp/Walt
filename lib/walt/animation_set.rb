@@ -1,3 +1,11 @@
+=begin
+  {
+    # array of assets (see asset/asset.rb) or UIViews
+    assets: [{...}],
+    # array of animations (see animation.rb)
+    animations: [{...}]
+  }
+=end
 module Walt
   class AnimationSet
     extend Walt::Support::AttrDefault

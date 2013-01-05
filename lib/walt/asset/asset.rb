@@ -2,7 +2,11 @@
   {
     id: :one,
     size: [100,100],
-    position: [10, 10]
+    position: [10, 10],
+    # array of integers or symbols corresponding to UIViewContentMode
+    content_mode: [:scale_to_fill, :top],
+    clips_to_bounds: true,
+    background_color: "0088ff"
   }
 =end
 

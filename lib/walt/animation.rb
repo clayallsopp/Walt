@@ -1,8 +1,11 @@
 =begin
   {
-    duration: 3,
+    delay: 0.5,
+    duration: 2.5,
+    # array of integers or symbols corresponding to UIViewAnimationOptions
     options: [:curve_ease_in, :autoreverse]
     operations: [{
+      # see operation/base.rb
       type: :move,
       from: 0,
       to: 40,
