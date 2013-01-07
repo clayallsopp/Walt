@@ -51,7 +51,7 @@ require 'walt'
 gem 'walt'
 ```
 
-Finally, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
+If you're going to use the image-URL loading of Walt, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
 
 ```ruby
 app.pods do
