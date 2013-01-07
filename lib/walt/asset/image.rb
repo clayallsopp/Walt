@@ -26,6 +26,9 @@ module Walt
         @view.contentMode = self.view_content_mode
         @view.clipsToBounds = self.clips_to_bounds
         url = NSURL.URLWithString(self.url)
+        if !@view.respond_to?("af_imageRequestOperation")
+          raise "You need to add the AFNetworking pod for remote images"
+        end
         @view.setImageWithURLRequest(NSURLRequest.requestWithURL(url), 
               placeholderImage:nil,
               success: lambda {|request, response, image|
