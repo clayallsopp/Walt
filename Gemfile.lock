@@ -2,19 +2,16 @@ PATH
   remote: .
   specs:
     walt (0.1)
-      afmotion (>= 0.4)
       bubble-wrap (>= 1.1.4)
       motion-cocoapods (~> 1.2.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (3.2.9)
+    activesupport (3.2.10)
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.3.2)
-    afmotion (0.4)
-      motion-cocoapods (>= 1.2.1)
     bubble-wrap (1.1.4)
     cocoapods (0.16.0)
       activesupport (~> 3.2.6)
