@@ -41,17 +41,17 @@ First install the `Walt` gem:
 
 `gem install walt`
 
-Add `Walt` to your Gemfile or require it in your `Rakefile`:
-
-```ruby
-require 'walt'
-```
+Add `Walt` to your `Gemfile` or require it in your `Rakefile`:
 
 ```ruby
 gem 'walt'
 ```
 
-If you're going to use the image-URL loading of Walt, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
+```ruby
+require 'walt'
+```
+
+If you're going to use the image-URL loading component of Walt, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
 
 ```ruby
 app.pods do
