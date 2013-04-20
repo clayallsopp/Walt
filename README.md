@@ -1,6 +1,8 @@
-# Walt
+# Walt for [RubyMotion](http://rubymotion.com)
 
-Make this:
+Tired of verbose animation chains in iOS?
+
+With Walt, you can make this:
 
 ![Walt animation](http://i.imgur.com/yd4RJ.gif)
 
