@@ -191,3 +191,14 @@ Animations can be chained using an animation's `:after` property, which takes an
   }
 }
 ```
+
+## Contact
+
+Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com))
+
+- [http://twitter.com/clayallsopp](http://twitter.com/clayallsopp)
+- [clay@usepropeller.com](clay@usepropeller.com)
+
+## License
+
+Routable for iOS is available under the MIT license. See the LICENSE file for more info.
