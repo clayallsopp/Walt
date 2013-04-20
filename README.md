@@ -201,4 +201,4 @@ Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com))
 
 ## License
 
-Routable for iOS is available under the MIT license. See the LICENSE file for more info.
+Walt is available under the MIT license. See the LICENSE file for more info.
