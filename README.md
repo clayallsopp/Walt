@@ -1,6 +1,8 @@
-# Walt
+# Walt for [RubyMotion](http://rubymotion.com)
 
-Make this:
+Tired of verbose animation chains in iOS?
+
+With Walt, you can make this:
 
 ![Walt animation](http://i.imgur.com/yd4RJ.gif)
 
@@ -41,17 +43,17 @@ First install the `Walt` gem:
 
 `gem install walt`
 
-Add `Walt` to your Gemfile or require it in your `Rakefile`:
-
-```ruby
-require 'walt'
-```
+Add `Walt` to your `Gemfile` or require it in your `Rakefile`:
 
 ```ruby
 gem 'walt'
 ```
 
-If you're going to use the image-URL loading of Walt, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
+```ruby
+require 'walt'
+```
+
+If you're going to use the image-URL loading component of Walt, add [AFNetworking](https://github.com/AFNetworking/AFNetworking) to your `pods`:
 
 ```ruby
 app.pods do
@@ -191,3 +193,14 @@ Animations can be chained using an animation's `:after` property, which takes an
   }
 }
 ```
+
+## Contact
+
+Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com))
+
+- [http://twitter.com/clayallsopp](http://twitter.com/clayallsopp)
+- [clay@usepropeller.com](clay@usepropeller.com)
+
+## License
+
+Walt is available under the MIT license. See the LICENSE file for more info.
