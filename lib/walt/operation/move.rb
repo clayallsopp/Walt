@@ -1,3 +1,5 @@
+motion_require "base"
+
 =begin
   {
     from: [0, 0],

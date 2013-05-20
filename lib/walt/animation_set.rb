@@ -1,3 +1,5 @@
+motion_require "support/attr_default"
+
 =begin
   {
     # array of assets (see asset/asset.rb) or UIViews

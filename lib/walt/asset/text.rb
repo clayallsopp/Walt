@@ -1,3 +1,5 @@
+motion_require "asset"
+
 =begin
   {
     text: "This goes on the screen",

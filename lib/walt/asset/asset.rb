@@ -1,3 +1,5 @@
+motion_require "../support/attr_default"
+
 =begin
   {
     id: :one,

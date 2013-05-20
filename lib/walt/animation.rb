@@ -1,3 +1,5 @@
+motion_require "support/attr_default"
+
 =begin
   {
     delay: 0.5,

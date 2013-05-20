@@ -1,3 +1,5 @@
+motion_require "asset"
+
 =begin
   {
     url: "http://mysite.com/pic.jpg"
